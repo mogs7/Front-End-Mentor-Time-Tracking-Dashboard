@@ -41,7 +41,7 @@ Users should be able to:
 
 ### What I learned
 
-- I've learnt how to work with JSON files though I don't think the way I worked with it was suitable or a good practice. 
+- I've learnt how to work with JSON files though I don't think the way I worked with it was suitable or good practice. 
 
 
 ### Continued development
