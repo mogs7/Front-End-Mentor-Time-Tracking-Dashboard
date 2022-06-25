@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <section class="section-one">
+
+        <div class="grid-container">
+          <div class="grid-item grid-item-profile">
+            <div class="user-profile">
+              <div class="mobile-layout-user-profile">
+                <img src="images/image-jeremy.png" alt="jeremy" class="user-profile-img">
+                <div class="mobile-layout-user-profile-details">
+                  <p>Report for</p>
+                  <p class="user-name">Jeremy Robson</p>
+                </div>
+              </div>
+            </div>
+            <!-- ask if it's okay to apply ids to all children here for js-->
+            <div class="sort-options">
+              <p id="daily">Daily</p>
+              <p id="weekly">Weekly</p>
+              <p id="monthly">Monthly</p>            
+            </div>
+          </div>
+          
+          <!-- activity grid-->
+          <div class="grid-item item-activity" id="work">
+            <div class="item-activity-content">
+              <div class="item-activity-title">
+                Work
+                <img src="images/icon-ellipsis.svg" alt="more-options" class="item-content-options-button">
+              </div>
+              <div class="mobile-item-activity-content">
+                <p class="item-activity-content-hours">-</p>
+                <p class="item-activity-content-previous">Previous - hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item item-activity" id="play">
+            <div class="item-activity-content">
+              <div class="item-activity-title">
+                Play
+                <img src="images/icon-ellipsis.svg" alt="more-options" class="item-content-options-button">
+              </div>
+              <div class="mobile-item-activity-content">
+                <p class="item-activity-content-hours">-</p>
+                <p class="item-activity-content-previous">Previous - hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item item-activity" id="study">
+            <div class="item-activity-content">
+              <div class="item-activity-title">
+                Study
+                <img src="images/icon-ellipsis.svg" alt="more-options" class="item-content-options-button">
+              </div>
+              <div class="mobile-item-activity-content">
+                <p class="item-activity-content-hours">-</p>
+                <p class="item-activity-content-previous">Previous - hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item item-activity" id="exercise">
+            <div class="item-activity-content">
+              <div class="item-activity-title">
+                Exercise
+                <img src="images/icon-ellipsis.svg" alt="more-options" class="item-content-options-button">
+              </div>
+              <div class="mobile-item-activity-content">
+                <p class="item-activity-content-hours">-</p>
+                <p class="item-activity-content-previous">Previous - hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item item-activity" id="social">
+            <div class="item-activity-content">
+              <div class="item-activity-title">
+                Social
+                <img src="images/icon-ellipsis.svg" alt="more-options" class="item-content-options-button">
+              </div>
+              <div class="mobile-item-activity-content">
+                <p class="item-activity-content-hours">-</p>
+                <p class="item-activity-content-previous">Previous - hrs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item item-activity" id="self-care">
+            <div class="item-activity-content">
+              <div class="item-activity-title">
+                Self Care
+                <img src="images/icon-ellipsis.svg" alt="more-options" class="item-content-options-button">
+              </div>
+              <div class="mobile-item-activity-content">
+                <p class="item-activity-content-hours">-</p>
+                <p class="item-activity-content-previous">Previous - hrs</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/mogs7" target="_blank">Miguel M.</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

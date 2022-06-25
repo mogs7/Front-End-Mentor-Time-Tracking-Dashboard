@@ -1,0 +1,328 @@
+body {
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;;
+}
+
+.section-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 225px);
+    grid-auto-rows: 225px;
+    margin-top: 20vh;
+}
+
+.grid-item{
+    position: relative;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px 10px 15px 15px;
+    width: 100%;
+}
+
+.grid-item.grid-item-profile{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.user-profile {
+    position: absolute;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 10px;
+    width: 100%;
+    height: 70%;
+    color: hsl(236, 100%, 87%);
+}
+
+.user-profile-img {
+    display: block;
+    margin: 15%;
+    width: 35%;
+    border-radius: 100%;
+    border: 3px solid white;
+}
+
+.user-profile p{
+    margin: 5% auto 1px 15%;
+}
+
+.user-name{
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+}
+
+.sort-options {
+    position: absolute;
+    margin: 15% auto 5% 15%;
+    bottom: 0;
+    color: hsl(235, 45%, 61%);
+}
+
+.sort-options p {
+    transition: ease-in 0.2s;
+}
+
+.sort-options p:hover {
+    transition: ease-in 0.2s;
+    color: white;
+    cursor: pointer;
+}
+
+.grid-item.item-activity{
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url("images/icon-work.svg");
+}
+
+#play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url("images/icon-play.svg");
+}
+
+#study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url("images/icon-study.svg");
+}
+
+#exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url("images/icon-exercise.svg");
+}
+
+#social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url("images/icon-social.svg");
+}
+
+#self-care {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url("images/icon-self-care.svg");
+}
+/*ask about having bottom border radius higher than the top border radius so as to hide the weird outlines if they were all 10px*/
+
+.item-activity-content {
+    position: absolute;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px 15px 10px 10px;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+    color: white;
+    transition: ease-in 0.2s;
+}
+
+.item-activity-content:hover {
+    background-color: hsl(236, 44%, 33%);
+    cursor: pointer;
+  
+}
+
+.item-activity-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-content-options-button {
+    cursor: pointer;
+}
+
+/* select all child elements of the content just to put margin */
+.item-activity-content > * {
+    margin: 10%;
+}
+
+.item-activity-content-hours {
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.item-activity-content-previous {
+    font-weight: 300;
+    margin-top: 0;
+    color: hsl(236, 100%, 87%);
+}
+
+.attribution {
+    margin-top: 100px;
+    color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-container{
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(4, 180px);
+        grid-auto-rows: 180px;
+        margin-top: 20vh;
+    }
+
+    .user-name{
+        font-size: 26px;
+        font-weight: 300;
+        color: white;
+    }
+
+    .sort-options p {
+        font-size: 14px;
+    }
+
+    .item-activity-content-hours {
+        font-size: 32px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .item-activity-content-previous {
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 0;
+        color: hsl(236, 100%, 87%);
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .grid-container{
+        display: grid;
+        grid-gap: 1.5rem;
+        grid-template-columns: repeat(2, 180px);
+        grid-auto-rows: 180px;
+        margin-top: 5vh;
+    }
+
+    .grid-item.grid-item-profile{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .user-profile p{
+        margin: 5% auto;
+        text-align: center;
+    }
+
+    .user-profile-img {
+        margin: 20px auto;
+        width: 25%;
+    }
+
+    .sort-options{
+        text-align: center;
+        width: 100%;
+        margin: 2% auto;
+    }
+
+    .user-name {
+        font-size: 32px;
+    }
+
+    .item-activity-content {
+        transition: none;
+    }
+    
+    .item-activity-content:hover {
+        background-color: hsl(235, 46%, 20%);
+    }
+
+
+}
+ 
+@media only screen and (max-width: 425px) {
+    .grid-container{
+        grid-template-columns: repeat(auto-fill,85vw);
+        grid-auto-rows: 200px;
+        grid-gap: 1rem;
+    }
+
+    .grid-item.grid-item-profile{
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: auto;
+        grid-row-end: auto;
+    }
+    
+    .user-profile {
+        display: block;
+        width: 100%;
+        height: 60%;
+        color: hsl(236, 100%, 87%);
+    }
+
+    .mobile-layout-user-profile {
+        display: flex;
+        padding: auto;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .user-profile-img {
+        margin: 5%;
+        margin-left: 0;
+        width: 20%;
+        border-radius: 100%;
+        border: 3px solid white;
+    }
+
+    .mobile-layout-user-profile-details {
+        display: block;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-layout-user-profile-details p{
+        text-align: left;
+    }
+
+    .user-name {
+        font-size: 24px;
+    }
+
+    .sort-options {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .sort-options p {
+        font-size: 18px;
+    }
+
+    .item-activity {
+        width: 100%;
+        height: 80%;
+        margin: auto;
+    }
+
+    .item-activity-title {
+        margin-bottom: 0;
+    }
+
+    .mobile-item-activity-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5% 31.875px;
+    }
+    
+    .item-activity-content-hours {
+        margin: 0;
+    }
+
+    .item-activity-content-previous {
+        margin: auto 0 auto auto
+    }
+
+
+    
+}
