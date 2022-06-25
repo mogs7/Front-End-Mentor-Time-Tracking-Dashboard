@@ -23,7 +23,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-### Screenshot
+### Screenshots
 
 - https://imgur.com/k4Fxf7G
 - https://imgur.com/WbpwbDw
