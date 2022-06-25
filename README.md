@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-https://imgur.com/k4Fxf7G
-https://imgur.com/WbpwbDw
-https://imgur.com/4PdwhKS
-https://imgur.com/KehTLjo
-https://imgur.com/ibNfpZ9
+- https://imgur.com/k4Fxf7G
+- https://imgur.com/WbpwbDw
+- https://imgur.com/4PdwhKS
+- https://imgur.com/KehTLjo
+- https://imgur.com/ibNfpZ9
 
 ## My process
 
